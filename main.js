@@ -27,10 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Sample certifications data - replace with your actual certifications
     const certifications = [
-        { name: 'AWS Certified Cloud Practitioner', image: 'images/certs/aws-cert.jpg' },
-        { name: 'Microsoft Azure Fundamentals', image: 'images/certs/azure-cert.jpg' },
-        { name: 'Google Cloud Fundamentals', image: 'images/certs/gcp-cert.jpg' },
-        { name: 'Full Stack Web Development', image: 'images/certs/fullstack-cert.jpg' }
+       
     ];
     
     // Populate certifications grid
