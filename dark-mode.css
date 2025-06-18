@@ -1,0 +1,59 @@
+/* dark-mode.css */
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --card-bg: #1e1e1e;
+    --nav-bg: rgba(30, 30, 30, 0.9);
+    --border-color: #333333;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--nav-bg);
+}
+
+.logo, .section-title span, .hero-title span, .hero-subtitle span {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #000000;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.project-card, .certification-card, .social-work-card, .about-content, .timeline-content {
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-tag {
+    background-color: #333333;
+    color: var(--text-color);
+}
+
+.contact-form input, 
+.contact-form textarea {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.footer {
+    background-color: var(--card-bg);
+}
+
+.theme-toggle {
+    color: var(--text-color);
+}
