@@ -621,81 +621,113 @@ img {
 }
 
 /* ===== Certifications Section ===== */
-.certifications {
-  padding: 100px 0;
+/* Make h3 responsive with better typography */
+.certification-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--heading-color);
+  line-height: 1.5;
+  font-weight: 600;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  letter-spacing: 0.3px;
 }
 
-.certifications-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
-}
-
+/* Certification card base styling */
 .certification-card {
-  background-color: var(--card-bg);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-  display: flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certification-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
+/* Certification image styling */
 .certification-image {
-  width: 120px;
-  background-color: white;
+  padding: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 15px;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 8px 8px 0 0;
 }
 
 .certification-image img {
-  max-width: 100%;
-  height: auto;
+  max-height: 120px;
+  width: auto;
   object-fit: contain;
 }
 
+/* Certification content styling */
 .certification-content {
-  flex: 1;
   padding: 20px;
+  background: white;
+  border-radius: 0 0 8px 8px;
 }
 
-.certification-content h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.cert-meta {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  font-size: 0.9rem;
-  color: var(--text-light);
-}
-
-.issuer {
-  font-weight: 500;
-}
-
-.date {
-  font-style: italic;
-}
-
+/* Button/link styling */
 .cert-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--primary-color);
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
   font-weight: 500;
-  transition: var(--transition);
+  border: none;
+  cursor: pointer;
 }
 
 .cert-link:hover {
-  color: var(--secondary-color);
+  background-color: var(--primary-dark-color);
+  text-decoration: none;
+}
+
+/* Responsive support for mobile */
+@media (max-width: 480px) {
+  .certification-content h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .certification-card {
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .certification-image {
+    padding: 8px;
+  }
+
+  .certification-image img {
+    max-height: 100px;
+  }
+
+  .certification-content {
+    padding: 15px;
+  }
+
+  .cert-link {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 481px) and (max-width: 768px) {
+  .certification-content h3 {
+    font-size: 1.05rem;
+  }
+  
+  .certification-image img {
+    max-height: 110px;
+  }
 }
 
 /* ===== Social Work Section ===== */
